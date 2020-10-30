@@ -91,6 +91,7 @@ body {
     padding-top: 5vh;
 }
 #about {
+    /*
     max-width:16vw;
     max-height:16vw;
     text-align:center;
@@ -107,8 +108,29 @@ body {
     z-index:4;
     transition:0.4s ease-in-out;
     border-radius:0 0 100px 100px;
+    */
+    width:16vw;
+    height:16vw;
+    text-align:center;
+    font-size:25px;
+    background:transparent;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    right:75vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:100px 100px 0 0;
+}
+#about:hover {
+    background: red;
+   cursor: pointer;
 }
 #work  {
+    /*
     width:16vw;
     height:16vw;
     text-align:center;
@@ -125,6 +147,26 @@ body {
     z-index:4;
     transition:0.4s ease-in-out;
     border-radius:0 0 100px 100px;
+    */
+    width:16vw;
+    height:16vw;
+    text-align:center;
+    font-size:25px;
+    background:transparent;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    left:75vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:100px 100px 0 0;
+}
+#work:hover {
+    background: red;
+   cursor: pointer;
 }
 #contact {
     width:16vw;
@@ -135,7 +177,7 @@ body {
     color:#fff;
     position:fixed;
     bottom:0;
-    left:45vw;
+    left:40vw;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -143,8 +185,9 @@ body {
     transition:0.4s ease-in-out;
     border-radius:100px 100px 0 0;
 }
-#contact:hover{
-    
+#contact:hover {
+    background: red;
+   cursor: pointer;
 }
 .containercontato {
     width:90vw;
