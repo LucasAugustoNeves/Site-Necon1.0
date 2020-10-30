@@ -112,7 +112,7 @@ body {
     width:16vw;
     height:16vw;
     text-align:center;
-    font-size:25px;
+    font-size:  Calc(1em + 1vw);;
     background:transparent;
     color:#fff;
     position:fixed;
@@ -151,12 +151,12 @@ body {
     width:16vw;
     height:16vw;
     text-align:center;
-    font-size:25px;
+    font-size: Calc(1em + 1vw);;
     background:transparent;
     color:#fff;
     position:fixed;
     bottom:0;
-    left:75vw;
+    left:70vw;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -172,7 +172,7 @@ body {
     width:16vw;
     height:16vw;
     text-align:center;
-    font-size:25px;
+    font-size: Calc(1em + 1vw);;
     background:transparent;
     color:#fff;
     position:fixed;
