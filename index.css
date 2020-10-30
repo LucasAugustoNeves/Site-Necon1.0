@@ -82,7 +82,6 @@ body {
 #middle h1 {
     color: rgb(248, 247, 247);
     font-size: Calc(1em + 2vw);
-    /*font-size:20px;*/
     max-width: 80vw;
 }
 #middle img{
@@ -91,24 +90,6 @@ body {
     padding-top: 5vh;
 }
 #about {
-    /*
-    max-width:16vw;
-    max-height:16vw;
-    text-align:center;
-    font-size:25px;
-    transform:rotate(-90deg);
-    background:transparent;
-    color:#fff;
-    position:fixed;
-    left:0;
-    bottom:40vh;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    z-index:4;
-    transition:0.4s ease-in-out;
-    border-radius:0 0 100px 100px;
-    */
     width:16vw;
     height:16vw;
     text-align:center;
@@ -126,28 +107,10 @@ body {
     border-radius:100px 100px 0 0;
 }
 #about:hover {
-    background: red;
-   cursor: pointer;
+    background: rgba(255,50,50,0.9);
+    cursor: pointer;
 }
 #work  {
-    /*
-    width:16vw;
-    height:16vw;
-    text-align:center;
-    font-size:25px;
-    transform:rotate(90deg);
-    background:transparent;
-    color:#fff;
-    position:fixed;
-    right:0;
-    bottom:40vh;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    z-index:4;
-    transition:0.4s ease-in-out;
-    border-radius:0 0 100px 100px;
-    */
     width:16vw;
     height:16vw;
     text-align:center;
@@ -165,8 +128,8 @@ body {
     border-radius:100px 100px 0 0;
 }
 #work:hover {
-    background: red;
-   cursor: pointer;
+    background: rgba(255,50,50,0.9);
+    cursor: pointer;
 }
 #contact {
     width:16vw;
@@ -186,14 +149,14 @@ body {
     border-radius:100px 100px 0 0;
 }
 #contact:hover {
-    background: red;
+    background: rgba(255,50,50,0.9);
    cursor: pointer;
 }
 .containercontato {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgb(255, 50, 50);
+    background: rgba(255,50,50);
     color:#fff;
     z-index:9;
     position:fixed;
@@ -231,21 +194,7 @@ body {
     .cards-contatos { grid-template-columns: repeat(4, 1fr); }
     .card-contato {width: 30vw;}
 }
-/*
-#about:hover {
-    background:rgba(255,50,50,0.9);
-    cursor:pointer;
-}
-#work:hover {
-    background:rgba(255,50,50,0.9);
-    cursor:pointer;
-}
-#contact:hover {
-    background:rgba(255,50,50,0.9);
-    cursor:pointer;
-}
 
- */
 #middle table {
     width:30%;
     margin:6vh auto;
