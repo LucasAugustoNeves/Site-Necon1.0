@@ -7,7 +7,7 @@
 
 Esse é o novo site da Necon Contabilidade está sendo construido em um formato moderno e totalmente responsivo para se adquar a qualquer tela que o acesse.
 
-![](_img/Neconlogo.png)
+![](Neconlogo.png)
 
 ## Histórico de lançamentos
 
