@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-
 body {
     padding:0;
     margin:0;
@@ -194,7 +193,6 @@ body {
     .cards-contatos { grid-template-columns: repeat(4, 1fr); }
     .card-contato {width: 30vw;}
 }
-
 #middle table {
     width:30%;
     margin:6vh auto;
@@ -239,7 +237,6 @@ body {
 .container section {
     margin:8vh 0;
 }
-
 #used div{
     font-size:14px !important;
     display:inline-block;
@@ -373,7 +370,6 @@ body {
 	color: #fff;
 	background: rgb(255, 50, 50);
 }
-
 /******************************
 ******Minhas-Estruturas********
 **************************** */
@@ -405,8 +401,6 @@ body {
 .email-share-button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
 }
-
-
 
 .containerempresa {
     width:90vw;
@@ -440,8 +434,6 @@ body {
 .card-empresa p{
     font-size: clamp(1em, 1em + 0.4vw, 1.5em);
 }
-
-
 /*****códigos de ajuda*/
 /*
 textos responsivos
