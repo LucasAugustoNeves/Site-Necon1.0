@@ -13,7 +13,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background:rgb(255, 50, 50);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@ body {
     align-items: center;
 }
 #spinner {
-    animation: rotate 0.56s infinite linear;
+    animation: rotate 0.76s infinite linear;
     width:50px;
     height:50px;
     border:12px solid #fff;
@@ -46,10 +46,10 @@ body {
     display:inline-block;
 }
 .box1 {
-    background:rgb(255, 50, 50);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
 }
 .box2 {
-    background:rgb(255, 50, 50);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     margin-left:-5px;
 }
 #menu {
@@ -106,7 +106,7 @@ body {
     border-radius:100px 100px 0 0;
 }
 #about:hover {
-    background: rgba(255,50,50,0.9);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     cursor: pointer;
 }
 #work  {
@@ -127,7 +127,7 @@ body {
     border-radius:100px 100px 0 0;
 }
 #work:hover {
-    background: rgba(255,50,50,0.9);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     cursor: pointer;
 }
 #contact {
@@ -148,14 +148,14 @@ body {
     border-radius:100px 100px 0 0;
 }
 #contact:hover {
-    background: rgba(255,50,50,0.9);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
    cursor: pointer;
 }
 .containercontato {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background: rgba(255,50,50);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     color:#fff;
     z-index:9;
     position:fixed;
@@ -216,7 +216,7 @@ body {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgb(255, 50, 50);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     color:#fff;
     z-index:9;
     position:fixed;
@@ -358,7 +358,8 @@ body {
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #fff; 
+    /*background: #fff;*/
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
 }
 ::-webkit-scrollbar-thumb {
     background: rgb(255, 50, 50); 
@@ -406,7 +407,7 @@ body {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background: rgba(255,50,50);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     color:#fff;
     z-index:9;
     position:fixed;
@@ -434,6 +435,19 @@ body {
 .card-empresa p{
     font-size: clamp(1em, 1em + 0.4vw, 1.5em);
 }
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .cards-empresas { grid-template-columns: repeat(2, 1fr); }
+    .card-empresas {width: 30vw;}
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 1200px) {
+    .cards-empresas { grid-template-columns: repeat(4, 1fr); }
+    .card-empresas {width: 30vw;}
+}
+
+
+
 /*****códigos de ajuda*/
 /*
 textos responsivos

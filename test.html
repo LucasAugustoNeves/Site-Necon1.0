@@ -1,27 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NEcon Contabilidade</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="test.css">
+
+ <style>
+    .content { max-width:800px;text-align:left; margin:auto; }
+
+/* THE DIV */
+.simple-ss {
+  width:800px;
+  height:250px;
+  background-color:red;
+  margin:auto;
+  /*unir imagende 250x800px*/
+  background-image:url("_img/Modelo\ de\ slide.png");
+  background-position:0;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+/* ANIMATING STUFF */
+  animation-name: slide;
+  animation-duration: 13s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+/* NOTE CODEPEN AUTOGENERATING -PREFIXES */
+@keyframes slide {
+  0% {background-position:0 0;}
+  16.66% {background-position:0 0;}
+  33.32% {background-position:-800px 0;}
+  49.98% {background-position:-800px 0;}
+  66.64% {background-position:-1600px 0;}
+  83.30% {background-position:-1600px 0;}
+  100% {background-position:0 0;}
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 450px) {
+  .simple-ss {
+  width:400px;
+  height:250px;
+  }
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 650px) {
+  .simple-ss {
+  width:500px;
+  height:250px;
+}
+ </style>
+
 </head>
 <body>
-    <button onclick="aperte1()">aperte aqui</button>
-    <button onclick="aperte2()">aperte aqui</button>
-    <button onclick="aperte3()">aperte aqui</button>
-    <button onclick="aperte4()">aperte aqui</button>
-    <h1 id="resultado">resultado aqui</h1>
-    <script>
-        function aperte1(){
-          window.prompt("ecreva")
-        }
-        function aperte2(){
-          window.alert("bom test2")
-        }function aperte4(){
-          window.alert("bom test3")
-        }function aperte4(){
-          window.alert("bom test4")
-        }
-    </script>
+  <div id="loading">
+    <div id="spinner"></div>
+</div>
+<div id="particles-js"></div>
+<div id="box">
+    <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+    <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+</div>
+<a id="about" onclick="showabout()" class="animated  slideInUp" style="animation-delay:2.2s;">Empresas</a>
+ <!--Pagina Inicial-->
+<div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+    <img src="_img/NEconLogo1.png" alt="">
+    <h1>Contabilidade de Empresas e Condomínios a 27 anos</h1>
+    <div id="menu">
+        <a onclick="showabout()">Empresas</a>
+        <a onclick="showwork()">Condomínios</a>
+        <a onclick="showcontact()">contato</a>
+    </div>
+</div>
+
+
+
+
+  <div id="about_container" class="container">
+    <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+    <h1>Empresas</h1>
+    <img src="_img/NEconLogoLuxo.png" alt="some text" width=300 height=280>
+    <nav>
+      <ul>
+        <li><a href="#quemsomos">Página inicial</a></li>
+        <li><a href="#empresa">Sobre</a></li>
+        <li><a href="#documentos">Contato</a></li>
+      </ul>
+    </nav> 
+    
+
+    <div class="simple-ss" id="simple-ss"></div>
+
+    <section style="background-color: chartreuse;" id="quemsomos">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio numquam distinctio, ad quisquam animi aut mollitia cum molestias minima aliquam deserunt fugit quae eos pariatur reiciendis, nulla, rem reprehenderit consectetur!</p>
+      
+
+   </section>
+   <section style="background-color: darkturquoise;" id="empresa">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis excepturi, aliquid reprehenderit quasi minima, expedita ex perspiciatis eveniet dolor, non voluptatem fuga! Quasi eum aspernatur dignissimos facere sed eos.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum debitis, qui illo enim cum eius quas optio corrupti voluptatem facere perferendis molestiae, facilis fugit! Dignissimos voluptatem ipsum vitae ea eveniet.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolorem, fuga suscipit alias dolores ipsam, hic ab distinctio mollitia laboriosam quam officia laborum praesentium adipisci vero delectus deserunt vitae ad?
+      </p>
+      
+   </section>
+   <section style="background-color: midnightblue;" id="documentos">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum rerum magni enim labore modi, amet, non pariatur perspiciatis iusto, deserunt sit ab architecto impedit delectus autem libero provident distinctio rem.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro recusandae quis eligendi. Sequi rem soluta aspernatur fuga cupiditate delectus laudantium doloribus inventore quo incidunt dolorum, exercitationem praesentium debitis! Quod, quasi.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quasi recusandae incidunt? Reiciendis porro natus, sint quo iure suscipit dolorum, corrupti in modi officiis qui iusto voluptatum expedita saepe quod!
+      </p>
+   </section>
+
+
+  </div>
+  
+
+
+
+
+
+<script>
+ el = document.getElementById("simple-ss");
+el.onclick = links;
+
+function links() {
+  left = parseInt(getComputedStyle(el).getPropertyValue("background-position").split(" ", 1));
+   
+  /* DEFINE POSITIONS FOR CLICK EVENTS */
+  if (left >= -400) {
+  
+    // First until about half way scrolled over
+    alert("first");
+    //window.open("https://www.google.com");
+  
+  } else if (left >= -1200) {
+  
+    // Second when half way scrolled either side
+    alert("second");
+    //window.open("https://www.google.com");
+    
+  } else if (left >= -1600) {
+    
+    // Third when over half way into banner
+    alert("third");
+    //window.open("https://www.google.com");
+    
+  }
+   
+}
+</script>
+
+
+<script src="index.js" type="text/javascript"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

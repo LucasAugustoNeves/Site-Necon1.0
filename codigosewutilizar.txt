@@ -1,0 +1,95 @@
+** trechos de códigos utilizar em outras partes site***
+
+
++++++++++++++++++++++++
+css
+-------------
+--Esse código serve para deixar o tamanho das letras responsivas a tela e quebra automatica de linhas
+-------------
+#Como Usar: Colocar no arquivo css do lado do fonte size
+/*
+textos responsivos
+font-size: Calc(1em + 10vw);
+font-size: clamp(1em, 1em + 10vw, 1.5em);
+ */
+ +++++++++++++++++++++++
+
+ --------------------------------------------------------------------------
+
+ +++++++++++++++++++++++
+css + js + html
+-------------
+--Esse código serve para fazer o slide show de imagens automaticas
+-------------
+#Como Usar: Colocar cada parte do codigo correspondente a css, js, html em seus arquivos.
+tmanho das imagens Altura 250px e largura 800px, todas as fotos do slide devem ser unidas em um arquivo só de 250px altura por largura (800 x quantidade de slides)
+++++++++++++++++++++++++
+<style>
+    .content { max-width:800px;text-align:left; margin:auto; }
+
+/* THE DIV */
+.simple-ss {
+  width:800px;
+  height:250px;
+  background-color:red;
+  margin:auto;
+  /*unir imagende 250x800px*/
+  background-image:url("_img/Modelo\ de\ slide.png");
+  background-position:0;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+/* ANIMATING STUFF */
+  animation-name: slide;
+  animation-duration: 13s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+/* NOTE CODEPEN AUTOGENERATING -PREFIXES */
+@keyframes slide {
+  0% {background-position:0 0;}
+  16.66% {background-position:0 0;}
+  33.32% {background-position:-800px 0;}
+  49.98% {background-position:-800px 0;}
+  66.64% {background-position:-1600px 0;}
+  83.30% {background-position:-1600px 0;}
+  100% {background-position:0 0;}
+}
+ </style>
+ ------
+ <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+ ----
+ <script>
+ el = document.getElementById("simple-ss");
+el.onclick = links;
+
+function links() {
+  left = parseInt(getComputedStyle(el).getPropertyValue("background-position").split(" ", 1));
+   
+  /* DEFINE POSITIONS FOR CLICK EVENTS */
+  if (left >= -400) {
+  
+    // First until about half way scrolled over
+    alert("first");
+    //window.open("https://www.google.com");
+  
+  } else if (left >= -1200) {
+  
+    // Second when half way scrolled either side
+    alert("second");
+    //window.open("https://www.google.com");
+    
+  } else if (left >= -1600) {
+    
+    // Third when over half way into banner
+    alert("third");
+    //window.open("https://www.google.com");
+    
+  }
+   
+}
+</script>
+--------
+ +++++++++++++++++++++++
