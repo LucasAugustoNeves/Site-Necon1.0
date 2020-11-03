@@ -44,19 +44,8 @@
   83.30% {background-position:-1600px 0;}
   100% {background-position:0 0;}
 }
-/* Screen larger than 600px? 2 column */
-@media (min-width: 450px) {
-  .simple-ss {
-  width:400px;
-  height:250px;
-  }
-}
-/* Screen larger than 600px? 2 column */
-@media (min-width: 650px) {
-  .simple-ss {
-  width:500px;
-  height:250px;
-}
+
+
  </style>
 
 </head>
@@ -89,9 +78,12 @@
 
 
   <div id="about_container" class="container">
+
+    <header>
     <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+    <div class="simple-ss" id="simple-ss"></div>
     <h1>Empresas</h1>
-    <img src="_img/NEconLogoLuxo.png" alt="some text" width=300 height=280>
+  </header>
     <nav>
       <ul>
         <li><a href="#quemsomos">Página inicial</a></li>
@@ -100,29 +92,11 @@
       </ul>
     </nav> 
     
+    
+    <section>
 
-    <div class="simple-ss" id="simple-ss"></div>
-
-    <section style="background-color: chartreuse;" id="quemsomos">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio numquam distinctio, ad quisquam animi aut mollitia cum molestias minima aliquam deserunt fugit quae eos pariatur reiciendis, nulla, rem reprehenderit consectetur!</p>
-      
-
-   </section>
-   <section style="background-color: darkturquoise;" id="empresa">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis excepturi, aliquid reprehenderit quasi minima, expedita ex perspiciatis eveniet dolor, non voluptatem fuga! Quasi eum aspernatur dignissimos facere sed eos.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum debitis, qui illo enim cum eius quas optio corrupti voluptatem facere perferendis molestiae, facilis fugit! Dignissimos voluptatem ipsum vitae ea eveniet.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolorem, fuga suscipit alias dolores ipsam, hic ab distinctio mollitia laboriosam quam officia laborum praesentium adipisci vero delectus deserunt vitae ad?
-      </p>
-      
-   </section>
-   <section style="background-color: midnightblue;" id="documentos">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum rerum magni enim labore modi, amet, non pariatur perspiciatis iusto, deserunt sit ab architecto impedit delectus autem libero provident distinctio rem.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro recusandae quis eligendi. Sequi rem soluta aspernatur fuga cupiditate delectus laudantium doloribus inventore quo incidunt dolorum, exercitationem praesentium debitis! Quod, quasi.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quasi recusandae incidunt? Reiciendis porro natus, sint quo iure suscipit dolorum, corrupti in modi officiis qui iusto voluptatum expedita saepe quod!
-      </p>
-   </section>
-
-
+    </section>
+    
   </div>
   
 

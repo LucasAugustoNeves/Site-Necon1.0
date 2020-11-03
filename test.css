@@ -450,6 +450,7 @@ body {
 }
 .card-empresa h2 {
     font-size: Calc(1em + 1vw);
+    
 }
 .card-empresa p{
     font-size: clamp(1em, 1em + 0.4vw, 1.5em);
