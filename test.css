@@ -426,7 +426,7 @@ body {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background: rgba(255,50,50);
+    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     color:#fff;
     z-index:9;
     position:fixed;

@@ -16,8 +16,9 @@
 
 /* THE DIV */
 .simple-ss {
-  width:800px;
-  height:250px;
+  widows: 93vw;;
+  height: 25vh;
+  border-radius: 60px 10px;
   background-color:red;
   margin:auto;
   /*unir imagende 250x800px*/
@@ -25,6 +26,7 @@
   background-position:0;
   background-repeat:no-repeat;
   background-size:cover;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 
 /* ANIMATING STUFF */
   animation-name: slide;
@@ -45,6 +47,23 @@
   100% {background-position:0 0;}
 }
 
+
+#linha-vertical {
+    height: 50vh;
+    border-right: 3px solid white;
+}
+.btnempresa{
+  height: 10vh;
+  width: 20vw;
+  background-color: yellow;
+  
+}
+.caixa{
+  margin-left: 45vw;
+    margin-right: 55vw;
+    margin-top: 10vh;
+    margin-bottom: 10vw;
+}
 
  </style>
 
@@ -77,25 +96,25 @@
 
 
 
-  <div id="about_container" class="container">
+  <div id="about_container" class="containerempresa">
 
     <header>
-    <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+       <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+    </header>
+   
     <div class="simple-ss" id="simple-ss"></div>
-    <h1>Empresas</h1>
-  </header>
-    <nav>
-      <ul>
-        <li><a href="#quemsomos">Página inicial</a></li>
-        <li><a href="#empresa">Sobre</a></li>
-        <li><a href="#documentos">Contato</a></li>
-      </ul>
-    </nav> 
     
     
-    <section>
+    <div class="caixa">
+      <button class="btnempresa"></button>
+       <div id="linha-vertical"></div>
+    </div>
+    
+    </div>
+    </div>
+     
 
-    </section>
+    
     
   </div>
   
