@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="test.css">
 
  <style>
-    .content { max-width:800px;text-align:left; margin:auto; }
+  /*.content { max-width:800px;text-align:left; margin:auto; }
 
 /* THE DIV */
 .simple-ss {
@@ -48,21 +48,39 @@
 }
 
 
-#linha-vertical {
-    height: 50vh;
-    border-right: 3px solid white;
-}
+main{
+      text-align: center;
+      display: block;
+      margin: 0 auto
+    }
+
 .btnempresa{
-  height: 10vh;
-  width: 20vw;
-  background-color: yellow;
-  
+  font-size:18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
+    background:transparent;
+    border:3px solid #fff;
+    padding:8px 40px;
+    border-radius:80px;
+    font-weight:bold;
+    margin:2vh 10px;
+    transition:0.4s ease-in-out;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*
+  margin-right: 5vw;
+  margin-left: 5vw;*/
+  margin-top: 15vh;
+  margin-bottom: 5vh;
 }
-.caixa{
-  margin-left: 45vw;
-    margin-right: 55vw;
-    margin-top: 10vh;
-    margin-bottom: 10vw;
+
+.btnempresa p{
+  font-size: clamp(1em, 1em + 0.4vw, 1.5em);
+  color: #fff;
+  text-decoration:none; 
+}
+.btnempresa a{
+  text-decoration:none; 
 }
 
  </style>
@@ -95,31 +113,26 @@
 
 
 
-
   <div id="about_container" class="containerempresa">
 
     <header>
        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+       <div class="simple-ss" id="simple-ss"></div> 
     </header>
    
-    <div class="simple-ss" id="simple-ss"></div>
     
-    
-    <div class="caixa">
-      <button class="btnempresa"></button>
-       <div id="linha-vertical"></div>
-    </div>
-    
-    </div>
-    </div>
-     
-
+    <main>
+      <button class="btnempresa" >
+        <a href="index.html"><p>Quero Conhecer a Necon</p></a>
+      </button>
+      <button class="btnempresa">
+        <a href="index.html"><p>Area do Empresarios</p></a>
+      </button>
+    </main>
     
     
   </div>
   
-
-
 
 
 

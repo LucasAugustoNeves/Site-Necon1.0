@@ -434,37 +434,7 @@ body {
     overflow-y:auto;
     display:none;
 }
-.cards-empresas {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.card-empresa{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-    transition: 0.3s;
-    width: 65vw;
-    padding: 1rem;
 
-}
-.card-empresa h2 {
-    font-size: Calc(1em + 1vw);
-    
-}
-.card-empresa p{
-    font-size: clamp(1em, 1em + 0.4vw, 1.5em);
-}
-/* Screen larger than 600px? 2 column */
-@media (min-width: 600px) {
-    .cards-empresas { grid-template-columns: repeat(2, 1fr); }
-    .card-empresas {width: 30vw;}
-}
-/* Screen larger than 600px? 2 column */
-@media (min-width: 1200px) {
-    .cards-empresas { grid-template-columns: repeat(4, 1fr); }
-    .card-empresas {width: 30vw;}
-}
 
 
 
