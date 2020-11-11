@@ -436,7 +436,7 @@ body {
     font-size: Calc(1em + 1vw);
 }
 .card-empresa p{
-    font-size: clamp(1em, 1em + 0.4vw, 1.5em);
+    height: 30vh;
 }
 /* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
