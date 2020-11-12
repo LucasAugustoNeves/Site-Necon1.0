@@ -109,39 +109,38 @@ body {
     background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     cursor: pointer;
 }
-  /* Pagina das empresas-I*/
-  main{
-    align-items: center;
-    display: block;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+.cards-empresas {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.btnempresa{
-  height: 50vh;
-  width: 30vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  margin-left: 2vw;
-  margin-right: 1vw;
-  border-radius: 10vw 1vw;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-  background: linear-gradient(315deg, rgba(27,25,25,1) 27%, rgba(28,28,30,1) 45%, rgba(28,28,30,1) 71%);
-}    
-.btnempresa img{
-  height: 25vh;
-  width: 15vw;
-}  
-.btnempresa p{
-  height: 30vh;
-  margin-top: 10vh;
-  color: white;
-} 
-.btnempresa a{
-  text-decoration: none;
-}  
-/* Pagina das empresas-F*/
+.card-empresa {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+    width: 65vw;
+    padding: 1rem;
+    border-radius: 30px 10px;
+
+}
+.card-empresa h2 {
+    font-size: Calc(1em + 1vw);
+}
+.card-empresa p{
+    font-size: clamp(1em, 1em + 0.4vw, 1.5em);
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .cards-empresa { grid-template-columns: repeat(2, 1fr); }
+    .card-empresa {width: 30vw;}
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 1200px) {
+    .cards-empresa { grid-template-columns: repeat(4, 1fr); }
+    .card-empresa {width: 30vw;}
+}
+
 #work  {
     width:16vw;
     height:16vw;
@@ -163,39 +162,37 @@ body {
     background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
     cursor: pointer;
 }
-  /* Pagina das condominio-I*/
-  main{
-    align-items: center;
-    display: block;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+.cards-condominios {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.btncondominio{
-  height: 50vh;
-  width: 30vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  margin-left: 2vw;
-  margin-right: 1vw;
-  border-radius: 10vw 1vw;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-  background: linear-gradient(315deg, rgba(27,25,25,1) 27%, rgba(28,28,30,1) 45%, rgba(28,28,30,1) 71%);
-}    
-.btncondominio img{
-  height: 25vh;
-  width: 15vw;
-}  
-.btncondominio p{
-  height: 30vh;
-  margin-top: 10vh;
-  color: white;
-} 
-.btncondominio a{
-  text-decoration: none;
-}  
-/* Pagina das condominio-F*/
+.card-condominio {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+    width: 65vw;
+    padding: 1rem;
+    border-radius: 30px 10px;
+
+}
+.card-condominio h2 {
+    font-size: Calc(1em + 1vw);
+}
+.card-condominio p{
+    font-size: clamp(1em, 1em + 0.4vw, 1.5em);
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .cards-condominio { grid-template-columns: repeat(2, 1fr); }
+    .card-condominio {width: 30vw;}
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 1200px) {
+    .cards-condominio { grid-template-columns: repeat(4, 1fr); }
+    .card-condominio {width: 30vw;}
+}
 #contact {
     width:16vw;
     height:16vw;
@@ -327,39 +324,6 @@ body {
     /*font-size:21px;*/
     font-size: clamp(1em, 1em + 1vw, 1.5em);
 }
-.btn_one {
-    font-size:18px;
-    font-family: 'Josefin Sans', sans-serif;
-    color:#fff;
-    background:transparent;
-    border:3px solid #fff;
-    padding:8px 40px;
-    border-radius:80px;
-    font-weight:bold;
-    margin:2vh 10px;
-    transition:0.4s ease-in-out;
-}
-.btn_one:hover {
-    cursor:pointer;
-    color:rgb(255, 50, 50);
-    background:#fff;
-}
-.btn_two {
-    font-size:18px;
-    font-family: 'Josefin Sans', sans-serif;
-    color:rgb(255, 50, 50);
-    background:#fff;
-    border:3px solid #fff;
-    padding:8px 40px;
-    border-radius:80px;
-    font-weight:bold;
-    margin:2vh 10px;
-    transition:0.4s ease-in-out;
-}
-.btn_two:hover {
-    cursor:pointer;
-    padding:8px 60px;
-}
 /*
 .container form input {
     width:46%;
@@ -439,7 +403,7 @@ body {
 	background: rgb(255, 50, 50);
 }
 /******************************
-******Minhas-Estruturas********
+******meus-botoes**************
 **************************** */
 .whatsapp-share-button{
     display: inline-block;
@@ -461,7 +425,7 @@ body {
     height: 60px;
     margin: 5px;
     background-size: 100% 100%; /* ou 'contain' */
-    background-image: url(_img/gmail.png);
+    background-image: url(_img/_iconesBTN/gmail.png);
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
@@ -469,16 +433,34 @@ body {
 .email-share-button:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
 }
+.btnir-share-button{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-size: 100% 100%; /* ou 'contain' */
+    background-image: url(_img/_iconesBTN/seta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    border-radius: 5px 5px 5px 5px;
+}
+.btnir-share-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+}
+/******************************
+***********slides**************
+**************************** */
 
-/* display slide */
-.simple-ss {
-    widows: 93vw;;
+/* display slide-I */
+.simple-ss-condominio {
+    widows: 90vw;;
     height: 25vh;
     border-radius: 60px 10px;
     background-color:red;
     margin:auto;
     /*unir imagende 250x800px*/
-    background-image:url("_img/Modelo\ de\ slide.png");
+    background-image:url("_img/_slideimg/Modelo\ de\ slide.png");
     background-position:0;
     background-repeat:no-repeat;
     background-size:cover;
@@ -491,7 +473,7 @@ body {
     animation-timing-function: ease;
     animation-iteration-count: infinite;
   }
-  
+ 
   /* NOTE CODEPEN AUTOGENERATING -PREFIXES */
   @keyframes slide {
     0% {background-position:0 0;}
@@ -503,58 +485,115 @@ body {
     100% {background-position:0 0;}
   }
 
-/**
-.containerempresa {
-    width:90vw;
-    height:90vh;
-    padding:5vh 5vw;
-    background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);
-    color:#fff;
-    z-index:9;
-    position:fixed;
-    max-height:100vh;
-    overflow-y:auto;
-    display:none;
-}
-.cards-empresas {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
-}
-.card-empresa{
+.simple-ss-empresa {
+    widows: 93vw;;
+    height: 25vh;
+    border-radius: 60px 10px;
+    background-color:red;
+    margin:auto;
+    /*unir imagende 250x800px*/
+    background-image:url("_img/_slideimg/Modelo\ de\ slide.png");
+    background-position:0;
+    background-repeat:no-repeat;
+    background-size:cover;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-    transition: 0.3s;
-    width: 65vw;
-    padding: 1rem;
-    border-radius: 30px 10px;
+  
+  /* ANIMATING STUFF */
+    animation-name: slide;
+    animation-duration: 13s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+    /* NOTE CODEPEN AUTOGENERATING -PREFIXES */
+ @keyframes slide {
+        0% {background-position:0 0;}
+        16.66% {background-position:0 0;}
+        33.32% {background-position:-800px 0;}
+        49.98% {background-position:-800px 0;}
+        66.64% {background-position:-1600px 0;}
+        83.30% {background-position:-1600px 0;}
+        100% {background-position:0 0;}
+ }
+  
+/* display slide-F*/
 
-}
-.card-empresa h2 {
-    font-size: Calc(1em + 1vw);
-}
-.card-empresa p{
-    height: 30vh;
-}
-*/
-/* Screen larger than 600px? 2 column */
+/* Screen larger Slides */
 @media (min-width: 600px) {
-    .cards-empresas { grid-template-columns: repeat(2, 1fr); }
-    .card-empresas {width: 30vw;}
+
 }
-/* Screen larger than 600px? 2 column */
+/* Screen larger Slides*/
 @media (min-width: 1200px) {
-    .cards-empresas { grid-template-columns: repeat(4, 1fr); }
-    .card-empresas {width: 30vw;}
+
 }
 
 
-
-/*****códigos de ajuda*/
 /*
-textos responsivos
-font-size: Calc(1em + 10vw);
-font-size: clamp(1em, 1em + 10vw, 1.5em);
- */
+----condominio botão preto---
+  /* Pagina das condominio-I
+  main{
+    align-items: center;
+    display: block;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.btncondominio{
+  height: 50vh;
+  width: 30vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-left: 2vw;
+  margin-right: 1vw;
+  border-radius: 10vw 1vw;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+  background: linear-gradient(315deg, rgba(27,25,25,1) 27%, rgba(28,28,30,1) 45%, rgba(28,28,30,1) 71%);
+}    
+.btncondominio img{
+  height: 25vh;
+  width: 15vw;
+}  
+.btncondominio p{
+  height: 30vh;
+  margin-top: 10vh;
+  color: white;
+} 
+.btncondominio a{
+  text-decoration: none;
+}  
+ Pagina das condominio-F*/
+
+ /* Pagina das empresas-I
+   main{
+    align-items: center;
+    display: block;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.btnempresa{
+  height: 50vh;
+  width: 30vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-left: 2vw;
+  margin-right: 1vw;
+  border-radius: 10vw 1vw;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+  background: linear-gradient(315deg, rgba(27,25,25,1) 27%, rgba(28,28,30,1) 45%, rgba(28,28,30,1) 71%);
+}    
+.btnempresa img{
+  height: 25vh;
+  width: 15vw;
+}  
+.btnempresa p{
+  height: 30vh;
+  margin-top: 10vh;
+  color: white;
+} 
+.btnempresa a{
+  text-decoration: none;
+}  
+ Pagina das empresas-F*/
