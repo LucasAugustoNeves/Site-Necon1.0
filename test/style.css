@@ -17,7 +17,7 @@ body {
   max-width: 800px;
   margin: auto;
   /*background-image: linear-gradient(to bottom, #fb0505, #f10616, #e70b20, #dc1228, #d1182e, #c71830, #bd1831, #b31932, #a71430, #9c102d, #900b2b, #850728);*/
-  background: rgb(235, 228, 228);
+  background: #fff;
   box-shadow: 0px 14px 80px rgba(77, 24, 20, 0.2);
   padding: 25px;
   border-radius: 25px;
@@ -108,7 +108,7 @@ body {
   width: 300px;
   flex-shrink: 0;
   height: 300px;
-  background-image: linear-gradient(147deg, #850728 0%, #fb0505 74%);
+  background-image: linear-gradient(147deg, #e93103 0%, #fd3838 74%);
   box-shadow: 4px 13px 30px 1px rgba(10, 0, 0, 0.2);
   border-radius: 20px;
   transform: translateX(-80px);
@@ -189,7 +189,7 @@ body {
 }
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #850728 0%, #fb0505 74%);
+  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
@@ -205,6 +205,8 @@ body {
     width: 100%;
   }
 }
+
+/*----------------comesso-navegação-lateral-------*/
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
   bottom: 10px;
   left: 0;
@@ -241,8 +243,8 @@ body {
   }
 }
 .blog-slider__pagination .swiper-pagination-bullet {
-  width: 11px;
-  height: 11px;
+  width: 20px;
+  height: 25px;
   display: block;
   border-radius: 10px;
   background: #062744;
@@ -251,13 +253,23 @@ body {
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background-image: linear-gradient(147deg, #850728 0%, #fb0505 74%);
-  height: 30px;
+  /*background-image: url(_img/seta.png) no-repeat left center;*/
+  background-size: 100% 100%; /* ou 'contain' */
+  background-image: url(_img/SetaB25.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+  /*background: #fd3838;*/
+  height: 50px;
   box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
 }
 @media screen and (max-width: 768px) {
   .blog-slider__pagination .swiper-pagination-bullet-active {
-    height: 11px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
+    background-size: 100% 100%; /* ou 'contain' */
+    background-image: url(_img/seta.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
