@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <title>NEcon Contabilidade</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div id="loading">
         <div id="spinner"></div>
@@ -27,7 +31,7 @@
     <a id="about" onclick="showabout()" class="animated  slideInUp" style="animation-delay:2.2s;">Empresas</a>
     <a id="work" onclick="showwork()" class="animated  slideInUp" style="animation-delay:2.2s;">Condomínios</a>
     <a id="contact" onclick="showcontact()" class="animated fadeIn slideInUp" style="animation-delay:2.2s;">Contato</a>
-     <!--Pagina Inicial-->
+    <!--Pagina Inicial-->
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
         <img src="_img/NEconLogo1.png" alt="">
         <h1>Contabilidade de Empresas e Condomínios a 27 anos</h1>
@@ -37,68 +41,69 @@
             <a onclick="showcontact()">Contato</a>
         </div>
     </div>
-     <!--Condominios-->
+    <!--Condominios-->
     <div id="work_container" class="container">
         <header>
             <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-            <div class="simple-ss-condominio" id="simple-ss-condominio"></div> 
-         </header>
-         <div class="cards-contatos" style="margin-top: 10vh;">
-             <div class="card-contato">
-                 <h2>Área do Condomino</h2>
-                 <p>
-                     <a href=""  rel="nofollow" target="_blank" class="btnir-share-button"></a>
-                 </p>
-                 
-             </div>
-             <div class="card-contato">
-                 <h2>Área do Fornecedores</h2>
-                 <p></p>
-                 <a href=""  rel="nofollow" target="_blank" class="btnir-share-button"></a>
-             </div>
-         </div> 
+            <div class="simple-ss-condominio" id="simple-ss-condominio"></div>
+        </header>
+        <div class="cards-contatos" style="margin-top: 10vh;">
+            <div class="card-contato">
+                <h2>Área do Condomino</h2>
+                <p>
+                    <a href="" rel="nofollow" target="_blank" class="btnir-share-button"></a>
+                </p>
+
+            </div>
+            <div class="card-contato">
+                <h2>Área do Fornecedores</h2>
+                <p></p>
+                <a href="" rel="nofollow" target="_blank" class="btnir-share-button"></a>
+            </div>
+        </div>
     </div>
     <!--Empresas-->
     <div id="about_container" class="container">
-    <header>
-        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-        <div class="simple-ss-empresa" id="simple-ss-empresa"></div> 
-     </header>
-     <div class="cards-empresas" style="margin-top: 10vh;">
-        <div class="card-empresa">
-            <h2>Quero Conhecer</h2>
-            <p>
-                <a href="_Propaganda/_slide/slide.html"  rel="nofollow" target="_blank" class="btnir-share-button"></a>
-            </p>
-            
+        <header>
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <div class="simple-ss-empresa" id="simple-ss-empresa"></div>
+        </header>
+        <div class="cards-empresas" style="margin-top: 10vh;">
+            <div class="card-empresa">
+                <h2>Quero Conhecer</h2>
+                <p>
+                    <a href="_Propaganda/_slide/slide.html" rel="nofollow" target="_blank"
+                        class="btnir-share-button"></a>
+                </p>
+
+            </div>
+            <div class="card-empresa">
+                <h2>Área do Empresario</h2>
+                <p></p>
+                <a href="" rel="nofollow" target="_blank" class="btnir-share-button"></a>
+            </div>
         </div>
-        <div class="card-empresa">
-            <h2>Área do Empresario</h2>
-            <p></p>
-            <a href=""  rel="nofollow" target="_blank" class="btnir-share-button"></a>
-        </div>
-    </div>
     </div>
     <!--Contato-->
     <div id="contact_container" class="containercontato">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <h1>Contatos</h1>
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>Contatos</h1>
         <div class="cards-contatos">
             <div class="card-contato">
                 <h2>Telefone e Whatsapp Comercial</h2>
                 <p>55 47 33691069 <br> 08:00 às 18:00 horas de Segunda a Sexta</p>
-                <a href=""  rel="nofollow" target="_blank" class="whatsapp-share-button"></a>
+                <a href="" rel="nofollow" target="_blank" class="whatsapp-share-button"></a>
             </div>
             <div class="card-contato">
                 <h2>Plantão somente urgências mecânicas</h2>
                 <p>Whatsapp 55 47 98430830<br> 08:00 às 23:00 de Segunda a Segunda</p>
-                <a href=""  rel="nofollow" target="_blank" class="whatsapp-share-button"></a>
+                <a href="" rel="nofollow" target="_blank" class="whatsapp-share-button"></a>
             </div>
 
             <div class="card-contato">
                 <h2>Email para contato</h2>
                 <p>Entre em contato pelo email necon@necon.com.br o click no botão a baixo</p>
-                <a href="mailto:necon@necon.com.br"  rel="nofollow" target="_blank" class="email-share-button"></a>
+                <a href="mailto:necon@necon.com.br" rel="nofollow" target="_blank" class="email-share-button"></a>
             </div>
         </div>
     </div>
@@ -109,6 +114,7 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
 
 

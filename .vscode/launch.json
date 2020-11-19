@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open test.html",
-            "file": "c:\\Program Files (x86)\\EasyPHP-Webserver-14.1b2\\www\\Site-Necon1.0\\Site-Necon1.0\\index.html"
+            "file": "c:\\Program Files (x86)\\EasyPHP-Webserver-14.1b2\\www\\Site-Necon1.0\\index.html"
         }
     ]
 }
