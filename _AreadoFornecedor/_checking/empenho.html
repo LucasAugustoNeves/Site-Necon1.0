@@ -17,34 +17,34 @@
   </h1>
 
   <section class="contact-wrap">
-    <form action="" class="contact-form">
+    <form  method="POST" class="contact-form" action="destino.php">
 
       <div class="col-sm-12">
         <div class="input-block">
           <label for="">Nome</label>
-          <input type="text" class="form-control">
+          <input type="text" name="nomedata" id="nomedata" class="form-control">
         </div>
       </div>
       <div class="col-sm-12">
         <div class="input-block">
           <label for="">Sobre Nome</label>
-          <input type="text" class="form-control">
+          <input type="text"  name="sobredata" id="sobredata" class="form-control">
         </div>
       </div>
       <div class="col-sm-12">
         <div class="input-block">
           <label for="">Email</label>
-          <input type="text" class="form-control">
+          <input type="text"  name="emaildata" id="emaildata" class="form-control">
         </div>
       </div>
       <div class="col-sm-12">
         <div class="input-block textarea">
           <label for="">Menssagem</label>
-          <textarea rows="3" type="text" class="form-control"></textarea>
+          <textarea rows="3" type="text"  name="textdata" id="textdata" class="form-control"></textarea>
         </div>
       </div>
       <div class="col-sm-12">
-        <button class="square-button">Enviar</button>
+        <input type="submit" name="submit" class="square-button"></input>
       </div>
 
     </form>
