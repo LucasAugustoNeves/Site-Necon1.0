@@ -242,3 +242,68 @@
 .select2-container--material.select2-container--disabled.select2-container--focus .select2-selection {
   box-shadow: none;
 }
+
+
+/**---------------area-de-texto----**/
+
+* {
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-property: none;
+  transition-property: none;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+label {
+  color: rgb(245, 240, 240);
+  font-family: sans-serif;
+  padding: 8px;
+  /*this bit's just for presentation*/
+  left: calc(50% - 250px);
+  position: absolute;
+  
+}
+label span {
+  color: rgb(253, 249, 249);
+  display: block;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  left: 9px;
+  margin: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 32px;
+  -webkit-transition-duration: .15s;
+          transition-duration: .15s;
+  -webkit-transition-property: color, font-size, top;
+  transition-property: color, font-size, top;
+}
+label textarea,
+label input {
+  background: inherit;
+  border-color: rgb(252, 248, 248);
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  color: rgb(248, 242, 242);
+  cursor: text;
+  font-size: 20px;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 24px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 1px;
+  resize: none;
+  -webkit-transition-property: border;
+  transition-property: border;
+  width: 100%;
+}
+label textarea:active, label textarea:focus,
+label input:active,
+label input:focus {
+  border-color: #f7f6f6;
+}
