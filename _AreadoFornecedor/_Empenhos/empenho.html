@@ -4,22 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - RESPONSIVE MATERIAL DESIGN CONTACT FORM </title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style copy.css">
 
-   <!--selecionar-IN-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <link href="dist/css/select2.css" rel="stylesheet" />
-   <script src="dist/js/select2.js"></script>
-   <script>
-       // In your Javascript (external .js resource or <script> tag)
-       $(document).ready(function() {
-       $('.js-example-basic-single').select2();
-       theme: "classic"
-       });
-   </script> 
-   <!--selecionar-FN-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css'>
+  <link rel="stylesheet" href="./style.css">
 
 
 </head>
@@ -34,9 +26,7 @@
     <form  method="POST" class="contact-form" action="destino.php">
 
       <div class="col-sm-12">
-            <!--selecionar-IN-->
-        <select type="text" name="test" class="js-example-basic-single" 
-        style="width: 100%; height: 10vh; margin-bottom: 8vh; background-color: rgba(255, 255, 255, 0.8); border: solid 1px #FF512F; color: #FF512F; padding: 26px; font-size: x-large;">
+        <select type="text" name="Condominiodata" id="Condominiodata" class="js-select2" >
                   <option value="LN"><h1>Condominio</h1></option>
                     ...
                   <option value="MN"><h1>Marcelo</h1></option>
@@ -52,14 +42,12 @@
                   <option value="CL"><h1>Cielo</h1></option>
                   ...
                   <option value="MG"><h1>Mag</h1></option>
-          </select>
-         <!--selecionar-FN--> 
+          </select> 
       </div>
 
       <div class="col-sm-12">
              <!--selecionar-IN-->
-        <select type="text" name="test" class="js-example-basic-single" 
-        style="width: 100%; height: 10vh; margin-bottom: 8vh; background-color: rgba(255, 255, 255, 0.8); border: solid 1px #FF512F; color: #FF512F; padding: 26px; font-size: x-large;">
+        <select type="text" name="fornrcedordata" id="fornecedordata" class="js-select2">
                   <option value="LN"><h1>Credor:</h1></option>
                     ...
                   <option value="MN"><h1>Marcelo</h1></option>
@@ -82,8 +70,7 @@
 
       <div class="col-sm-12">
            <!--selecionar-IN-->
-           <select type="text" name="test" class="js-example-basic-single" 
-           style="width: 100%; height: 10vh; margin-bottom: 8vh; background-color: rgba(255, 255, 255, 0.8); border: solid 1px #FF512F; color: #FF512F; padding: 26px; font-size: x-large;">
+           <select type="text" name="tipodata" id="tipodata" class="js-select2">
                      <option value="LN"><h1>Tipo:</h1></option>
                        
                      <option value="Amariles"><h1>Amariles</h1></option>
@@ -98,53 +85,60 @@
 
 
       <div class="col-sm-12">
-        <div class="input-block textarea">
-          <label for="">Histórico</label>
-          <textarea rows="3" type="text"  name="textdata" id="textdata" class="form-control"></textarea>
+        <div class="group">      
+          <input type="text" name="historicodata" id="historicodata" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Historico:</label>
         </div>
       </div>
 
       <div class="col-sm-12">
-        <div class="input-block textarea">
-          <label for="">Valor</label>
-          <textarea rows="3" type="number"  name="textdata" id="textdata" class="form-control"></textarea>
+        <div class="group">      
+          <input type="text" name="valordata" id="valordata" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Valor:</label>
         </div>
       </div>
 
       <div class="col-sm-12">
-        <div class="input-block textarea">
-          <label for="">NRO RECIBO, NF, BOLETO:</label>
-          <textarea rows="3" type="number"  name="textdata" id="textdata" class="form-control"></textarea>
+        <div class="group">      
+          <input type="text" name="recibodata" id="recibodata" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>NRO RECIBO, NF, BOLETO:</label>
         </div>
       </div>
 
       <div class="col-sm-12">
-        <div class="input-block textarea">
-          <label for="">NRO O.S.:</label>
-          <textarea rows="3" type="number"  name="textdata" id="textdata" class="form-control"></textarea>
+        <div class="group">      
+          <input type="text" name="osdata" id="osdata" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>N.O. </label>
         </div>
       </div>
 
       <div class="col-sm-12">
-           <!--selecionar-IN-->
-           <select type="text" name="test" class="js-example-basic-single" 
-           style="width: 100%; height: 10vh; margin-bottom: 8vh; background-color: rgba(255, 255, 255, 0.8); border: solid 1px #FF512F; color: #FF512F; padding: 26px; font-size: x-large;">
-                     <option value="LN"><h1>Inclusão</h1></option>
-                       ...
-                     <option value="MN"><h1>Coreção</h1></option>
-             </select>
-            <!--selecionar-FN--> 
-      </div>
+          <select type="text" name="destinodata" id="dastinodata" class="js-select2">
+              <option value="LN"><h1>Inclusão</h1></option>
+                 ...
+              <option value="MN"><h1>Coreção</h1></option>
+          </select>
+        </div>
+
       <div class="col-sm-12">
         <input type="submit" name="submit" class="square-button"></input>
       </div>
 
     </form>
   </section>
- 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="./script.js"></script>
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js'></script>
+  <script  src="./script.js"></script>
 
 </body>
-
 </html>

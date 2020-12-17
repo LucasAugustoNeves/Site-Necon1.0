@@ -1,11 +1,16 @@
 <?php
 
+$condominio = $_POST["Condominiodata"];
+$fornecedor = $_POST["fornrcedordata"];
+$tipo = $_POST["tipodata"];
+$historico = $_POST["historicodata"];
+$valor = $_POST["valordata"];
+$recibo = $_POST["recibodata"];
+$os = $_POST["osdata"];
+$destino = $_POST["destinodata"];
 
-$nome = $_POST["nomedata"];
-$sobre = $_POST["sobredata"];
-$idade = $_POST["emaildata"];
-$text = $_POST["textdata"];
-$conteudo = "$nome; $sobre; $idade; $text; ";
+
+$conteudo = "$condominio; $fornecedor; $tipo; $historico; $valor; $recibo; $os; $destino; ";
 
 //ARQUIVO TXT
 $arquivo = "data.txt";
