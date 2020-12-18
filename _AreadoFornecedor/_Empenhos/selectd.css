@@ -242,3 +242,31 @@
 .select2-container--material.select2-container--disabled.select2-container--focus .select2-selection {
   box-shadow: none;
 }
+
+
+
+
+
+textarea {
+  background-attachment: local;
+  background-color: transparent;
+  border-bottom: 5px solid #f7f8f8;
+  line-height: 18px;
+  margin-top: 35px;
+  -webkit-transition: height 0.5s ease, opacity 0.5s ease 0.1s;
+  transition: height 0.5s ease, opacity 0.5s ease 0.1s;
+  width: 95%;
+  color: white;
+}
+textarea:not(:focus) {
+  height: 37px;
+}
+textarea:not(:focus)::-webkit-scrollbar {
+  display: none;
+}
+textarea:focus {
+  height: 139px;
+}
+
+
+
