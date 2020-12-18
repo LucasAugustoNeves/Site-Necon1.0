@@ -1,11 +1,10 @@
 <?php
 
+$condominio = $_POST["Condominiodata"];
+$fornecedor = $_POST["fornrcedordata"];
+$tipo = $_POST["tipodata"];
 
-$nome = $_POST["nomedata"];
-$sobre = $_POST["sobredata"];
-$idade = $_POST["emaildata"];
-$text = $_POST["textdata"];
-$conteudo = "$nome; $sobre; $idade; $text; ";
+$conteudo = "$condominio; $fornecedor; $tipo; ";
 
 //ARQUIVO TXT
 $arquivo = "data.txt";
@@ -27,7 +26,7 @@ if (!fwrite($abrir, $conteudo)) {
   //FECHA O ARQUIVO
   fclose($abrir);
 
-  echo "<meta http-equiv='refresh' content='3;URL=empenho.html'>";
+  echo "<meta http-equiv='refresh' content='3;URL=cheking.html'>";
 
 ?>
 

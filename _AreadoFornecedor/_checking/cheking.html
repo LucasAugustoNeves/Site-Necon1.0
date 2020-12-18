@@ -16,14 +16,14 @@
 
 <body>
   <!-- partial:index.partial.html -->
-  <h1> Orçamentos
-    <small>Envie seu orçamento por aqui</small>
+  <h1>CHECK-IN no Condominio
+    <small>Faça o check-in ao chegar no condominio</small>
   </h1>
 
   <section class="contact-wrap">
     <form  method="POST" class="contact-form" action="destino.php">
       
-
+      <!-- selecionar-in -->
       <div class="col-sm-12">
         <select type="text" name="Condominiodata" id="Condominiodata" class="js-select2" >
           <option><h1>Condominios:</h1></option>
@@ -470,6 +470,7 @@
           </option>      
         </select> 
       </div>
+      <!-- selecionar-fn -->
 
       <div class="col-sm-12">
              <!--selecionar-IN-->
@@ -11789,71 +11790,41 @@
            <select type="text" name="tipodata" id="tipodata" class="js-select2">
                      <option value="LN"><h1>Tipo:</h1></option>
                        
-                     <option value="ORCAMENTODEMATERIAL"><h1>ORÇAMENTO DE MATERIAL</h1></option>
+                     <option value="LIMPEZA"><h1>LIMPEZA</h1></option>
                       
-                     <option value="ORCAMENTOSEMMATERIAL"><h1>ORÇAMENTO SEM MATERIAL</h1></option>
-                       
-                     <option value="ORCAMENTOCOMMATERIAL"><h1>ORÇAMENTO COM MATERIAL</h1></option>
-                      
-                     <option value="ORCAMENTOSEMINSTALACAO"><h1>ORÇAMENTO SEM INSTALAÇÃO</h1></option>
+                     <option value="VISTORIA"><h1>VISTORIA</h1></option>
 
-                     <option value="ORCAMENTOCOMINSTALACAO"><h1>ORÇAMENTO COM INSTALAÇÃO</h1></option>
-                     
+                     <option value="VISTORIADOSINDICO"><h1>VISTORIA DO SINDICO</h1></option>
+
+                     <option value="GASABASTECIMENTO"><h1>ABASTECIMENTO DE GAS</h1></option>
+                      
+                     <option value="GASMANUTENCAO"><h1>MANUTENÇÃO DO GAS</h1></option>
+
+                     <option value="PISCINAMANUTENCAO"><h1>MANUTENÇÃO DA PISCINA</h1></option>
+                      
+                     <option value="ELEVADORMANUTENCAO"><h1>MANUTENÇÃO DO ELEVADOR</h1></option>
+
+                     <option value="JARDINAGEMMANUTENCAO"><h1>MANUTENÇÃO DO JARDIM</h1></option>
+                      
+                     <option value="TVREPAROTECNICO"><h1>REPARO TECNICO NA TV</h1></option>
+
+                     <option value="PORTAOREPAROTECNICO"><h1>REPARO TECNICO NO PORTÃO</h1></option>
+
+                     <option value="INTERNETEREPAROTECNICO"><h1>REPARO TECNICO NA INTERNET</h1></option>
+
+                     <option value="ELETRICOREPAROTECNICO"><h1>REPARO TECNICO ELETRICO</h1></option>
+
+                     <option value="HIDRAULICOREPAROTECNICO"><h1>REPARO TECNICO NA HIDRAULICA</h1></option>  
              </select>
             <!--selecionar-FN--> 
       </div>
 
-
-      <div class="col-sm-12">
-        <div class="group">      
-          <span class="highlight"></span>
-          <label>Historico:</label>
-          <textarea type="text" name="historicodata" id="historicodata" class='tds-textarea no-lines'></textarea>
-        </div>
-      </div>
-
-      <div class="col-sm-12">
-        <div class="group">      
-          <input type="text" name="valordata" id="valordata" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Valor:</label>
-        </div>
-      </div>
-
-      <div class="col-sm-12">
-        <div class="group">      
-          <input type="text" name="osdata" id="osdata" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>NRO O.S.:</label>
-        </div>
-      </div>
-
-      <div class="col-sm-12">
-        <div class="group">      
-          <input type="text" name="recibodata" id="recibodata" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>NRO RECIBO, NF, BOLETO:</label>
-        </div>
-      </div>
-
-      <div class="col-sm-12">
-        <div class="group">      
-          <input type="text" name="linkdata" id="linkdata" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>DOCUMENTO ANEXO:(COLOQUE SEU DOCUMENTO NAS NUVENS E COMPARTILHE O LINK POR AQUI</label>
-        </div>
-      </div>
-
-
-
-
+    
+      <!-- Botão-enviar-in -->
       <div class="col-sm-12">
         <input type="submit" name="submit" class="square-button"></input>
       </div>
+      <!-- Botão-enviar-fn -->
 
     </form>
   </section>
