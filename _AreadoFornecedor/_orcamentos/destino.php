@@ -7,10 +7,10 @@ $historico = $_POST["historicodata"];
 $valor = $_POST["valordata"];
 $recibo = $_POST["recibodata"];
 $os = $_POST["osdata"];
-$link = $_POST["linkdata"];
+$destino = $_POST["destinodata"];
 
 
-$conteudo = "$condominio; $fornecedor; $tipo; $historico; $valor; $recibo; $os; $link; ";
+$conteudo = "$condominio; $fornecedor; $tipo; $historico; $valor; $recibo; $os; $destino; ";
 
 //ARQUIVO TXT
 $arquivo = "data.txt";
@@ -32,7 +32,7 @@ if (!fwrite($abrir, $conteudo)) {
   //FECHA O ARQUIVO
   fclose($abrir);
 
-  echo "<meta http-equiv='refresh' content='3;URL=orcamento.html'>";
+  echo "<meta http-equiv='refresh' content='3;URL=empenho.html'>";
 
 ?>
 

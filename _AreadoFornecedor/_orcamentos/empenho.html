@@ -16,14 +16,14 @@
 
 <body>
   <!-- partial:index.partial.html -->
-  <h1> Orçamentos
-    <small>Envie seu orçamento por aqui</small>
+  <h1> Formulario de Orçamentos
+    <small>Emvie seu Orçamento Por Aqui</small>
   </h1>
 
   <section class="contact-wrap">
     <form  method="POST" class="contact-form" action="destino.php">
       
-
+            <!--Condominios-->
       <div class="col-sm-12">
         <select type="text" name="Condominiodata" id="Condominiodata" class="js-select2" >
           <option><h1>Condominios:</h1></option>
@@ -470,7 +470,7 @@
           </option>      
         </select> 
       </div>
-
+           <!--Fornecedor-->
       <div class="col-sm-12">
              <!--selecionar-IN-->
         <select type="text" name="fornrcedordata" id="fornecedordata" class="js-select2">
@@ -11783,27 +11783,23 @@
          <!--selecionar-FN--> 
       </div>
 
-
+           <!--Tipo-->
       <div class="col-sm-12">
            <!--selecionar-IN-->
            <select type="text" name="tipodata" id="tipodata" class="js-select2">
                      <option value="LN"><h1>Tipo:</h1></option>
                        
-                     <option value="ORCAMENTODEMATERIAL"><h1>ORÇAMENTO DE MATERIAL</h1></option>
+                     <option value="Amariles"><h1>Amariles</h1></option>
                       
-                     <option value="ORCAMENTOSEMMATERIAL"><h1>ORÇAMENTO SEM MATERIAL</h1></option>
-                       
-                     <option value="ORCAMENTOCOMMATERIAL"><h1>ORÇAMENTO COM MATERIAL</h1></option>
-                      
-                     <option value="ORCAMENTOSEMINSTALACAO"><h1>ORÇAMENTO SEM INSTALAÇÃO</h1></option>
-
-                     <option value="ORCAMENTOCOMINSTALACAO"><h1>ORÇAMENTO COM INSTALAÇÃO</h1></option>
+                     <option value="Camboim"><h1>Camboim</h1></option>
                      
+                     <option value="Borboleta"><h1>Borboleta</h1></option>
+                   
              </select>
             <!--selecionar-FN--> 
       </div>
 
-
+            <!--Historico-->
       <div class="col-sm-12">
         <div class="group">      
           <span class="highlight"></span>
@@ -11811,7 +11807,7 @@
           <textarea type="text" name="historicodata" id="historicodata" class='tds-textarea no-lines'></textarea>
         </div>
       </div>
-
+           <!--Valor-->
       <div class="col-sm-12">
         <div class="group">      
           <input type="text" name="valordata" id="valordata" required>
@@ -11820,16 +11816,7 @@
           <label>Valor:</label>
         </div>
       </div>
-
-      <div class="col-sm-12">
-        <div class="group">      
-          <input type="text" name="osdata" id="osdata" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>NRO O.S.:</label>
-        </div>
-      </div>
-
+           <!--Recibo-->
       <div class="col-sm-12">
         <div class="group">      
           <input type="text" name="recibodata" id="recibodata" required>
@@ -11838,18 +11825,26 @@
           <label>NRO RECIBO, NF, BOLETO:</label>
         </div>
       </div>
-
+           <!--OS-->
       <div class="col-sm-12">
         <div class="group">      
-          <input type="text" name="linkdata" id="linkdata" required>
+          <input type="text" name="osdata" id="osdata" required>
           <span class="highlight"></span>
           <span class="bar"></span>
-          <label>DOCUMENTO ANEXO:(COLOQUE SEU DOCUMENTO NAS NUVENS E COMPARTILHE O LINK POR AQUI</label>
+          <label>N.O. </label>
         </div>
       </div>
 
-
-
+         <!--Link-drive-->
+         <div class="col-sm-12">
+          <div class="group">      
+            <input type="text" name="osdata" id="osdata" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Compartilhar Arquivo</label>
+          </div>
+        </div>
+      
 
       <div class="col-sm-12">
         <input type="submit" name="submit" class="square-button"></input>
