@@ -48,7 +48,6 @@ div.cabecalho h1 small {
   background-color: transparent;
 }
 
-
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 600px) {
   .wrapper {
@@ -61,8 +60,6 @@ div.cabecalho h1 small {
   .wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-}
-
 .letter {
   height: 140PX;
   background-color: #2d3031;
@@ -100,3 +97,6 @@ div.cabecalho h1 small {
   padding-left: 30%;
   padding-right: 50%;
 }
+
+
+
