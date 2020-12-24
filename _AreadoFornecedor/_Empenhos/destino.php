@@ -10,7 +10,7 @@ $os = $_POST["osdata"];
 $destino = $_POST["destinodata"];
 
 
-$conteudo = "$condominio; $fornecedor; $tipo; $historico; $valor; $recibo; $os; $destino; ";
+$conteudo = "* $condominio; $fornecedor; $tipo; $historico; $valor; $recibo; $os; $destino; ";
 
 //ARQUIVO TXT
 $arquivo = "data.txt";
@@ -29,6 +29,13 @@ if (!fwrite($abrir, $conteudo)) {
   echo "Arquivo gravado com Sucesso !!";
 
   }
+
+
+
+
+
+
+  
   //FECHA O ARQUIVO
   fclose($abrir);
 
