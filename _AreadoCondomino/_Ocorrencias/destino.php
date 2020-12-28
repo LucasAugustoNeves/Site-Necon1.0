@@ -15,7 +15,7 @@ $conteudo = "$condominio; $fornecedor; $tipo; $historico; $valor; $recibo; $os; 
 $DATA=date("d/m/Y"); 
 $HORA=time("H");
 
-$arq=fopen("data.txt","a") or die("Erro na crição do arquivo EMPENHOS.TXT");
+$arq=fopen("Ocorrencias.txt","a") or die("Erro na crição do arquivo EMPENHOS.TXT");
 
 fwrite($arq,"\r\n");
 
@@ -56,7 +56,7 @@ fwrite($arq,"\r\n");
 
 fclose($arq);
 
-$arq=fopen("Empenhos.csv","a") or die("Erro na crição do arquivo EMPENHOS.CSV");
+$arq=fopen("Ocorrencias.csv","a") or die("Erro na crição do arquivo EMPENHOS.CSV");
 
 fwrite($arq,"\r\n");
 

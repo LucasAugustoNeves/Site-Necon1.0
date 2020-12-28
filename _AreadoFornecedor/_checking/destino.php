@@ -9,7 +9,7 @@ $conteudo = "$condominio; $fornecedor; $tipo; ";
 $DATA=date("d/m/Y"); 
 $HORA=time("H");
 
-$arq=fopen("data.txt","a") or die("Erro na crição do arquivo EMPENHOS.TXT");
+$arq=fopen("Empenhos.txt","a") or die("Erro na crição do arquivo EMPENHOS.TXT");
 
 fwrite($arq,"\r\n");
 
