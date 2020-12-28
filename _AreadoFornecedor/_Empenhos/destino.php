@@ -1,5 +1,4 @@
 <?php
-
 $condominio = $_POST["Condominiodata"];
 $fornecedor = $_POST["fornrcedordata"];
 $tipo = $_POST["tipodata"];
@@ -29,11 +28,6 @@ if (!fwrite($abrir, $conteudo)) {
   echo "Arquivo gravado com Sucesso !!";
 
   }
-
-
-
-
-
 
   
   //FECHA O ARQUIVO
