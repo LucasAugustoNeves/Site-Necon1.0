@@ -6,25 +6,57 @@ $tipo = $_POST["tipodata"];
 
 $conteudo = "$condominio; $fornecedor; $tipo; ";
 
-//ARQUIVO TXT
-$arquivo = "data.txt";
-//TENTA ABRIR O ARQUIVO TXT
-if (!$abrir = fopen($arquivo, "a")) {
-  echo "Erro abrindo arquivo ($arquivo)";
-  exit;
-  }
+$DATA=date("d/m/Y"); 
+$HORA=time("H");
 
-  //ESCREVE NO ARQUIVO TXT
-if (!fwrite($abrir, $conteudo)) {
-  print "Erro escrevendo no arquivo ($arquivo)";
-  exit;
-  }else{
+$arq=fopen("data.txt","a") or die("Erro na crição do arquivo EMPENHOS.TXT");
 
-  echo "Arquivo gravado com Sucesso !!";
+fwrite($arq,"\r\n");
 
-  }
+fwrite($arq,"*");
+fwrite($arq,str_pad($condominio,100));
+
+fwrite($arq,";");
+fwrite($arq,str_pad( $fornecedor,74));
+
+
+fwrite($arq,str_pad($DATA,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($HORA,20));
+
+fwrite($arq,";");
+fwrite($arq,"\r\n");
+
+fclose($arq);
+
+$arq=fopen("Empenhos.csv","a") or die("Erro na crição do arquivo EMPENHOS.CSV");
+
+fwrite($arq,"\r\n");
+
+fwrite($arq,"*");
+fwrite($arq,str_pad($condominio,100));
+
+fwrite($arq,";");
+fwrite($arq,str_pad( $fornecedor,74));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($tipo,50));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($DATA,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($HORA,20));
+
+fwrite($arq,";");
+fwrite($arq,"\r\n");
+
+fclose($arq);
+
+  
   //FECHA O ARQUIVO
-  fclose($abrir);
+fclose($abrir);
 
   echo "<meta http-equiv='refresh' content='3;URL=cheking.html'>";
 

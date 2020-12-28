@@ -99,7 +99,7 @@ fclose($arq);
 
   
   //FECHA O ARQUIVO
-  fclose($abrir);
+fclose($abrir);
 
   echo "<meta http-equiv='refresh' content='3;URL=empenho.html'>";
 
