@@ -4,30 +4,98 @@ $fornecedor = $_POST["fornrcedordata"];
 $tipo = $_POST["tipodata"];
 $historico = $_POST["historicodata"];
 $valor = $_POST["valordata"];
-$recibo = $_POST["recibodata"];
-$os = $_POST["osdata"];
+$ntonf = $_POST["recibodata"];
+$nroos = $_POST["osdata"];
 $destino = $_POST["destinodata"];
 
 
 $conteudo = "* $condominio; $fornecedor; $tipo; $historico; $valor; $recibo; $os; $destino; ";
 
-//ARQUIVO TXT
-$arquivo = "data.txt";
-//TENTA ABRIR O ARQUIVO TXT
-if (!$abrir = fopen($arquivo, "a")) {
-  echo "Erro abrindo arquivo ($arquivo)";
-  exit;
-  }
 
-  //ESCREVE NO ARQUIVO TXT
-if (!fwrite($abrir, $conteudo)) {
-  print "Erro escrevendo no arquivo ($arquivo)";
-  exit;
-  }else{
+$DATA=date("d/m/Y"); 
+$HORA=time("H");
 
-  echo "Arquivo gravado com Sucesso !!";
+$arq=fopen("data.txt","a") or die("Erro na crição do arquivo EMPENHOS.TXT");
 
-  }
+fwrite($arq,"\r\n");
+
+fwrite($arq,"*");
+fwrite($arq,str_pad($condominio,100));
+
+fwrite($arq,";");
+fwrite($arq,str_pad( $fornecedor,74));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($tipo,50));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($valor,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($ntonf ,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad( $destino,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($DATA,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($HORA,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($nroos,10));
+
+fwrite($arq,"\r\n");
+fwrite($arq,"#");
+fwrite($arq,"-");
+fwrite($arq,str_pad($historico,100));
+
+fwrite($arq,";");
+fwrite($arq,"\r\n");
+
+fclose($arq);
+
+$arq=fopen("Empenhos.csv","a") or die("Erro na crição do arquivo EMPENHOS.CSV");
+
+fwrite($arq,"\r\n");
+
+fwrite($arq,"*");
+fwrite($arq,str_pad($condominio,100));
+
+fwrite($arq,";");
+fwrite($arq,str_pad( $fornecedor,74));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($historico,50));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($valor,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($destino,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad( $nroos,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($DATA,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($HORA,20));
+
+fwrite($arq,";");
+fwrite($arq,str_pad($nroos,10));
+
+fwrite($arq,"\r\n");
+fwrite($arq,"#");
+fwrite($arq,"-");
+fwrite($arq,str_pad($historico,100));
+
+fwrite($arq,";");
+fwrite($arq,"\r\n");
+
+fclose($arq);
 
   
   //FECHA O ARQUIVO
