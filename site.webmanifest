@@ -1,12 +1,47 @@
 {
-  "short_name": "",
-  "name": "",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "short_name": "NEcon",
+  "name": "NEcon Conatbilidade",
+  "description": "Aplicativo da NEcon Contabilidade",
+  "display": "fullscreen",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "_icon/icon36.png",
+      "type": "image/png",
+      "sizes": "36x36",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "_icon/icon48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {  
+      "src": "_icon/icon72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },{
+      "src": "_icon/icon98.png",
+      "sizes": "98x98",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "_icon/icon128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "_icon/icon144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FF0000"
 }
